@@ -1,0 +1,23 @@
+// Install Packages microsoft.aspnetcore.identity.entityframeworkcore
+// Custom User Class : IdentityUser<string>
+// Custom Role Class : IdentityRole<string>
+// Context Class : IdentityDbContext<ApplicationUser, ApplicationRole, string>
+// Migration
+// AuthController 
+// Inject UserManager<ApplicationUser>
+// Register DbContext
+// Register Identity
+// Register Action (Get, Post)
+// Login Action (Get, Post)
+// Logout Action (Get)
+
+
+
+
+// 2FA
+// ConfirmEmail // Resend // SendGrid 
+// ConfrimPhone // Twilow
+// Lockout
+// ForgetPassword
+// ResetPassword
+// ExternalLogin
