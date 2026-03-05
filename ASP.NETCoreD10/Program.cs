@@ -50,6 +50,37 @@ namespace ASP.NETCoreD10
 
             var app = builder.Build();
 
+            // First Roles And Admin User
+            //using (var scope = app.Services.CreateScope())
+            //{
+            //    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+            //    string[] roles = { "Admin", "User" };
+
+            //    foreach (var role in roles)
+            //    {
+            //        if (!await roleManager.RoleExistsAsync(role))
+            //            await roleManager.CreateAsync(new IdentityRole(role));
+            //    }
+
+            //    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+            //    string adminEmail = "admin@gmail.com";
+            //    string password = "Admin@123";
+
+            //    if (await userManager.FindByEmailAsync(adminEmail) == null)
+            //    {
+            //        var admin = new ApplicationUser
+            //        {
+            //            UserName = adminEmail,
+            //            Email = adminEmail
+            //        };
+
+            //        await userManager.CreateAsync(admin, password);
+            //        await userManager.AddToRoleAsync(admin, "Admin");
+            //    }
+            //}
+
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
